@@ -1,0 +1,5 @@
+1-python -m venv venv ## *for the first time only
+2-venv\Scripts\activate
+3-pip install fastapi "uvicorn[standard]" sqlalchemy argon2-cffi pyotp PyJWT "pydantic[email]" python-multipart pytest httpx ## *only for the first time*
+4-uvicorn app.main:app --reload
+5-open this link: http://localhost:8000/docs
